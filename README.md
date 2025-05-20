@@ -30,3 +30,7 @@ bun run dev
 ```bash
 git clone https://github.com/Mzuhaibkhan/resume-ai0.2.git
 cd resume-ai0.2
+
+
+bun install
+bun install
