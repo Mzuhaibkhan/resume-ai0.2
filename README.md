@@ -24,6 +24,8 @@ ResumeAI is a web application that leverages artificial intelligence to provide 
 ### Steps
 
 1. **Clone the repository**
+bun install
+bun run dev
 
 ```bash
 git clone https://github.com/Mzuhaibkhan/resume-ai0.2.git
