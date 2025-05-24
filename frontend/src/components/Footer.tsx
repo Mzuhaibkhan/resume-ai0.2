@@ -1,5 +1,6 @@
 import { Mail, Github, Linkedin } from 'lucide-react';
 import { Link } from "react-router-dom";
+import Orb from '@/components/ui/Orb';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -47,8 +48,9 @@ const Footer = () => {
         </div>
 
         {/* Footer */}
-        <footer className="w-full bg-gray-400 py-8 px-4 mt-4">
-          <div className="max-w-7xl mx-auto flex justify-between items-center text-black">
+        <footer className="w-full bg-gray-400 py-6 px-4 mt-4">
+
+          <div className="max-w-7xl mx-auto flex justify-between items-start text-black">
             {/* Left Profile */}
             <div className="relative flex items-start space-x-4">
               {/* Decorative Square and Lines */}
@@ -63,7 +65,14 @@ const Footer = () => {
 
               {/* Name and Social Links */}
               <div>
-                <div className="font-medium">Mohd Zuhaib Khan</div>
+                <div className="hidden sm:block font-medium" style={{ fontFamily: "'Advent Pro', sans-serif", letterSpacing: '0.1em' }}>
+                  Mohd Zuhaib Khan
+                </div>
+
+                {/* Short name for small screens (≤640px) */}
+                <div className="block sm:hidden font-medium" style={{ fontFamily: "'Advent Pro', sans-serif", letterSpacing: '0.1em' }}>
+                  Zuhaib
+                </div>
                 <div className="flex space-x-2 mt-1">
                   <a href="https://www.linkedin.com/in/m-zuhaib-kh/" className="hover:text-blue-700">
                     <Linkedin className="w-5 h-5" />
@@ -79,31 +88,13 @@ const Footer = () => {
             </div>
 
             {/* Logo */}
-            <div className="relative w-[48px] h-[48px]">
-
-              <div className="absolute top-[3px] left-[3px] w-3 h-3 bg-black rounded-full" />
-
-              <div className="absolute top-0 left-[32px] w-4 h-px bg-white" />
-              <div className="absolute top-0 left-[32px] w-px h-4 bg-white" />
-              <div className="absolute top-0 left-[47px] w-px h-4 bg-white" />
-
-              <div className="absolute top-[16px] left-[16px] w-px h-4 bg-white" />
-              <div className="absolute top-[16px] left-[32px] w-px h-4 bg-white" />
-
-              <div className="absolute top-[47px] left-0 w-4 h-px bg-white" />
-              <div className="absolute top-[32px] left-0 w-px h-4 bg-white" />
-              <div className="absolute top-[32px] left-[16px] w-px h-4 bg-white" />
-
-              <div className="absolute top-[47px] left-[32px] w-4 h-px bg-white" />
-              <div className="absolute top-[32px] left-[32px] w-px h-4 bg-white" />
-              <div className="absolute top-[32px] left-[48px] w-px h-4 bg-white" />
-
-              <div className="absolute top-[16px] left-[16px] w-8 h-px bg-white" />
-
-              <div className="absolute top-[31px] left-0 w-8 h-px bg-white" />
-
-              <div className="absolute top-[31px] left-[16px] w-8 h-px bg-white" />
-
+            <div className="hidden sm:block" style={{ width: '10%', height: '70px', position: 'relative' }}>
+              <Orb
+                hoverIntensity={0.5}
+                rotateOnHover={true}
+                hue={0}
+                forceHoverState={false}
+              />
             </div>
 
             {/* Right Profile */}
@@ -119,7 +110,16 @@ const Footer = () => {
 
               {/* Name and Social Links */}
               <div>
-                <div className="font-medium">Rahul Kumar Mall</div>
+                {/* Full name for large screens */}
+                <div className="hidden sm:block font-medium" style={{ fontFamily: "'Advent Pro', sans-serif", letterSpacing: '0.1em' }}>
+                  Rahul Kumar Mall
+                </div>
+
+                {/* Short name for small screens (≤640px) */}
+                <div className="block sm:hidden font-medium" style={{ fontFamily: "'Advent Pro', sans-serif", letterSpacing: '0.1em' }}>
+                  Rahul
+                </div>
+
                 <div className="flex space-x-2 mt-1">
                   <a href="https://www.linkedin.com/in/rahul-malll-85989327b/" className="hover:text-blue-700">
                     <Linkedin className="w-5 h-5" />
