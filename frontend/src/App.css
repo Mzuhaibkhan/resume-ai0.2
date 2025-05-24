@@ -43,17 +43,7 @@
 .read-the-docs {
   color: #888;
 }
-.metaball-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1080px;
-  height: 200px;
-  z-index: 0;
-  background: url('/path-to-metaball-animation.svg') no-repeat center center;
-  background-size: cover;
-  pointer-events: none; /* ensures footer content remains clickable */
-}
+
 .footer-content {
   position: relative;
   z-index: 1;
