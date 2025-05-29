@@ -48,19 +48,19 @@ const Footer = () => {
         </div>
 
         {/* Footer */}
-        <footer className="w-full bg-gray-400 py-6 px-4 mt-4">
+        <footer className="w-full bg-gray-400 dark:bg-gradient-to-r from-slate-900 to-gray-800 py-6 px-4 mt-4">
 
-          <div className="max-w-7xl mx-auto flex justify-between items-start text-black">
+          <div className="max-w-7xl mx-auto flex justify-between items-start text-black dark:text-slate-400">
             {/* Left Profile */}
             <div className="relative flex items-start space-x-4">
               {/* Decorative Square and Lines */}
               <div className="relative w-12 h-12">
                 {/* Inner solid square */}
-                <div className="absolute top-1 left-2 w-full h-full border-[3px] border-black  z-10"></div>
+                <div className="absolute top-1 left-2 w-full h-full border-[3px] border-black dark:border-slate-400 z-10"></div>
                 {/* Outer line square */}
-                <div className="absolute top-0 left-1 w-full h-full border border-black z-0"></div>
+                <div className="absolute top-0 left-1 w-full h-full border border-black dark:border-slate-400 z-0"></div>
                 {/* Circle */}
-                <div className="absolute -top-2 left-2 w-2 h-2 bg-black rounded-full z-20"></div>
+                <div className="absolute -top-2 left-2 w-2 h-2 bg-black dark:bg-slate-400 rounded-full z-20"></div>
               </div>
 
               {/* Name and Social Links */}
@@ -74,13 +74,13 @@ const Footer = () => {
                   Zuhaib
                 </div>
                 <div className="flex space-x-2 mt-1">
-                  <a href="https://www.linkedin.com/in/m-zuhaib-kh/" className="hover:text-blue-700">
+                  <a href="https://www.linkedin.com/in/m-zuhaib-kh/" className="dark:text-slate-500 hover:text-blue-700 dark:hover:text-blue-700">
                     <Linkedin className="w-5 h-5" />
                   </a>
-                  <a href="https://github.com/Mzuhaibkhan" className="hover:text-[#6e5494]">
+                  <a href="https://github.com/Mzuhaibkhan" className="dark:text-slate-500 hover:text-[#6e5494] dark:hover:text-[#6e5494]">
                     <Github className="w-5 h-5" />
                   </a>
-                  <a href="mailto:khanzuhaib966@gmail.com" className="hover:text-[#EA4335]">
+                  <a href="mailto:khanzuhaib966@gmail.com" className="dark:text-slate-500 hover:text-[#EA4335] dark:hover:text-[#EA4335]">
                     <Mail className="w-5 h-5" />
                   </a>
                 </div>
@@ -101,11 +101,11 @@ const Footer = () => {
             <div className="flex items-start space-x-4">
               <div className="relative w-12 h-12">
                 {/* Inner solid square */}
-                <div className="absolute top-1 left-2 w-full h-full border-[3px] border-black  z-10"></div>
+                <div className="absolute top-1 left-2 w-full h-full border-[3px] border-black dark:border-slate-400 z-10"></div>
                 {/* Outer line square */}
-                <div className="absolute top-0 left-1 w-full h-full border border-black z-0"></div>
+                <div className="absolute top-0 left-1 w-full h-full border border-black dark:border-slate-400 z-0"></div>
                 {/* Circle */}
-                <div className="absolute -top-2 left-2 w-2 h-2 bg-black rounded-full z-20"></div>
+                <div className="absolute -top-2 left-2 w-2 h-2 bg-black dark:bg-slate-400 rounded-full z-20"></div>
               </div>
 
               {/* Name and Social Links */}
@@ -121,13 +121,13 @@ const Footer = () => {
                 </div>
 
                 <div className="flex space-x-2 mt-1">
-                  <a href="https://www.linkedin.com/in/rahul-malll-85989327b/" className="hover:text-blue-700">
+                  <a href="https://www.linkedin.com/in/rahul-malll-85989327b/" className="dark:text-slate-500 hover:text-blue-700 dark:hover:text-blue-700">
                     <Linkedin className="w-5 h-5" />
                   </a>
-                  <a href="https://github.com/Rahul1038402" className="hover:text-[#6e5494]">
+                  <a href="https://github.com/Rahul1038402" className="dark:text-slate-500 hover:text-[#6e5494] dark:hover:text-[#6e5494]">
                     <Github className="w-5 h-5" />
                   </a>
-                  <a href="mailto:rahul1038402@gmail.com" className="hover:text-[#EA4335]">
+                  <a href="mailto:rahul1038402@gmail.com" className="dark:text-slate-500 hover:text-[#EA4335] dark:hover:text-[#EA4335]">
                     <Mail className="w-5 h-5" />
                   </a>
                 </div>
