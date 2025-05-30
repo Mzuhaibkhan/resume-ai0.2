@@ -43,7 +43,7 @@ const Index = () => {
               Analyze Your <span style={{letterSpacing:'0.001em'}}>Resume</span> Using AI
             </GradientText>
             <div className="glass-container">
-              <p className="text-x3 mb-8 " style={{fontFamily:'Poppins'  ,letterSpacing: '0.3em' }}>
+              <p className="text-x3 mb-8 " style={{fontFamily:'Poppins'  ,letterSpacing: '0.1em' }}>
                 Get personalized feedback and recommendations to improve your resume
                 and match your target job positions.
               </p>
