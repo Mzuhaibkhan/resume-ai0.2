@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-
+import GradientText from "@/components/ui/GradientText";
 const About = () => {
   return (
     <Layout>
@@ -7,7 +7,16 @@ const About = () => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-extrabold text-resume-primary dark:text-white mb-4">
-              About ResumeAI
+              <span className="inline">
+              About{" "}
+              <span className="inline"><GradientText
+                colors={["#9BBD67", "#26C168", "#92C8C0", "#4079ff", "#E3F1E8", "#515039", "#88FDE9", "#0B532F"]}
+                animationSpeed={10}
+                showBorder={false}
+                className="text-2x1 font-semibold pb-2 inline"
+              >ResumeAI</GradientText>
+              </span>
+              </span>
             </h1>
             <p className="text-xl text-gray-500 dark:text-gray-400">
               Empowering job seekers to create smarter resumes with AI-driven insights.

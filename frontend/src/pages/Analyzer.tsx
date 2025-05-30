@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card";
 import { analyzeResume } from "@/api/resumeService";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
+import GradientText from "@/components/ui/GradientText";
 
 const Analyzer = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -37,7 +38,7 @@ const Analyzer = () => {
 
     setIsAnalyzing(true);
     setError(null);
-    
+
     try {
       const analysisResult = await analyzeResume(file, targetJob);
       setResult(analysisResult);
@@ -57,22 +58,30 @@ const Analyzer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-resume-primary dark:text-white mb-4">
+            <GradientText
+              colors={["#BDE284", "#28A99C", "#025B77", "#458460", "#2B906A", "#2B906A", "#43B578", "#0B532F"]}
+              animationSpeed={11}
+              showBorder={false}
+              className="text-5xl "
+            >
+              <p className="mb-5">
               Resume Analyzer
-            </h1>
+              </p>
+            </GradientText>
+
             <p className="text-xl text-gray-600 dark:text-gray-300">
               Upload your resume, choose a target job, and get AI-powered analysis
             </p>
           </div>
-          
+
           <div className="space-y-6">
             <div className="grid gap-6 lg:grid-cols-2">
               <ResumeUploader onFileSelected={handleFileSelected} />
               <JobSelector onJobSelected={handleJobSelected} />
             </div>
-            
+
             <Card className="bg-resume-light dark:bg-gray-800 p-6 text-center">
-              <Button 
+              <Button
                 className="w-full sm:w-auto bg-resume-primary hover:bg-resume-primary/90 dark:bg-resume-secondary dark:hover:bg-resume-secondary/90 px-8"
                 size="lg"
                 onClick={handleAnalyze}
@@ -91,9 +100,9 @@ const Analyzer = () => {
                 We'll analyze your resume against {targetJob || "general"} requirements
               </p>
             </Card>
-            
-            <ResumeResults 
-              result={result} 
+
+            <ResumeResults
+              result={result}
               loading={isAnalyzing}
               error={error}
             />
