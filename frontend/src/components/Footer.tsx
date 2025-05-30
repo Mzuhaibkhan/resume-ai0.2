@@ -9,51 +9,49 @@ const Footer = () => {
   return (
     <>
       {/* Footer Navigation */}
-      <div className="bg-resume-light dark:bg-gray-900 pt-12 border-t border-gray-200 dark:border-gray-700 z-[-2]">
-        <div className="container mx-auto px-4 pb-8 relative z-[-2]">
-          <div className="fixed inset-0 z-[-1]">
-          <Threads/>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 z-[-2]">
+      <div className="bg-resume-light dark:bg-gray-900 pt-12 border-t border-gray-200 dark:border-gray-700 ">
+        <div className="container mx-auto px-4 pb-8 relative ">
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             <div>
-              <h3 className="text-xl font-bold text-resume-primary dark:text-white mb-4 z-[-2]">
+              <h3 className="text-xl font-bold text-resume-primary dark:text-white mb-4 ">
                 <GradientText
                   colors={["#9BBD67", "#26C168", "#92C8C0", "#4079ff", "#E3F1E8", "#515039", "#88FDE9", "#0B532F"]}
                   animationSpeed={10}
                   showBorder={false}
-                  className="text-4xl font-semibold z-[-2] "
+                  className="text-4xl font-semibold  "
                 >
                 ResumeAI
                 </GradientText>
                 </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4 z-[-2]">
+              <p className="text-gray-600 dark:text-gray-300 mb-4 ">
                 Advanced resume analysis powered by AI to help you land your dream job.
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold text-resume-dark dark:text-gray-200 mb-4 z-[-2]">Navigation</h4>
+              <h4 className="font-semibold text-resume-dark dark:text-gray-200 mb-4 ">Navigation</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors z-[-2]">Home</Link>
+                  <Link to="/" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors ">Home</Link>
                 </li>
                 <li>
-                  <Link to="/analyzer" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors z-[-2]">Resume Analyzer</Link>
+                  <Link to="/analyzer" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors ">Resume Analyzer</Link>
                 </li>
                 <li>
-                  <Link to="/about" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors z-[-2]">About</Link>
+                  <Link to="/about" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors ">About</Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold text-resume-dark dark:text-gray-200 mb-4 z-[-2]">Legal</h4>
+              <h4 className="font-semibold text-resume-dark dark:text-gray-200 mb-4 ">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/privacy" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors z-[-2]">Privacy Policy</Link>
+                  <Link to="/privacy" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors ">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="/terms" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors z-[-2]">Terms of Service</Link>
+                  <Link to="/terms" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors">Terms of Service</Link>
                 </li>
               </ul>
             </div>

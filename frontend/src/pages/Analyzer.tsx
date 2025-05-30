@@ -55,7 +55,7 @@ const Analyzer = () => {
 
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-12 " >
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <GradientText
@@ -69,7 +69,7 @@ const Analyzer = () => {
               </p>
             </GradientText>
 
-            <p className="text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-xl text-gray-600 dark:text-gray-300 ">
               Upload your resume, choose a target job, and get AI-powered analysis
             </p>
           </div>
@@ -96,7 +96,7 @@ const Analyzer = () => {
                   "Analyze Resume"
                 )}
               </Button>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 z-0">
                 We'll analyze your resume against {targetJob || "general"} requirements
               </p>
             </Card>
