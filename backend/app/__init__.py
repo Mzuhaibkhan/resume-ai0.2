@@ -11,7 +11,7 @@ def create_app():
         r"/analyze": {
             "origins": [
                 "http://localhost:8080",
-                "https://resume-ai-gzed.vercel.app"
+                "https://resume-ai0-2.vercel.app"
             ],
             "methods": ["POST"],
             "allow_headers": ["Content-Type"]
