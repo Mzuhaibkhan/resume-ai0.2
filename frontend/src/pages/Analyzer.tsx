@@ -59,7 +59,7 @@ const Analyzer = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <GradientText
-              colors={["#BDE284", "#28A99C", "#025B77", "#458460", "#2B906A", "#2B906A", "#43B578", "#0B532F"]}
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
               animationSpeed={11}
               showBorder={false}
               className="text-5xl "

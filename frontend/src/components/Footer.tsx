@@ -2,7 +2,6 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 import { Link } from "react-router-dom";
 import Orb from '@/components/ui/Orb';
 import GradientText from './ui/GradientText';
-import Threads from './ui/threads';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -30,7 +29,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold text-resume-dark dark:text-gray-200 mb-4 ">Navigation</h4>
+              <h4 className="font-semibold text-xl text-resume-primary dark:text-resume-secondary mb-4 ">Navigation</h4>
               <ul className="space-y-2">
                 <li>
                   <Link to="/" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors ">Home</Link>
@@ -45,7 +44,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold text-resume-dark dark:text-gray-200 mb-4 ">Legal</h4>
+              <h4 className="font-semibold text-xl text-resume-primary dark:text-resume-secondary mb-4 ">Legal</h4>
               <ul className="space-y-2">
                 <li>
                   <Link to="/privacy" className="text-gray-600 hover:text-resume-primary dark:text-gray-300 dark:hover:text-white transition-colors ">Privacy Policy</Link>
@@ -60,7 +59,7 @@ const Footer = () => {
         </div>
 
         {/* Footer */}
-        <footer className="w-full bg-[#f0f0f0] dark:bg-gradient-to-r from-slate-900 to-gray-800 py-6 px-4 mt-4" >
+        <footer className="w-full bg-[#f0f0f0] dark:bg-slate-900 py-6 px-4 mt-4" >
 
           <div className="max-w-7xl mx-auto flex justify-between items-start text-black dark:text-slate-400">
             {/* Left Profile */}

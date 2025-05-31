@@ -21,7 +21,7 @@ An intelligent resume analysis system that evaluates resumes against target job 
 | Frontend       | React 18 + TypeScript     |
 | Styling        | Tailwind CSS + shadcn/ui  |
 | Backend        | Python Flask              |
-| NLP Processing | spaCy + en\_core\_web\_lg |
+| NLP Processing | spaCy + en\_core\_web\_sm |
 | Build Tool     | Vite                      |
 
 ---
@@ -40,7 +40,7 @@ An intelligent resume analysis system that evaluates resumes against target job 
 
 ```bash
 git lfs install
-git clone https://github.com/Rahul1038402/resume_ai.git
+git clone https://github.com/Mzuhaibkhan/resume-ai0.2.git
 cd resume_ai
 ```
 
@@ -75,12 +75,12 @@ flask run --port 5000 --debug
 ("Resume AI backend is running!" should be displayed on port 5000)
 
 
-> 📦 Includes Flask, flask-cors, spaCy, python-docx, PyMuPDF, and en\_core\_web\_lg via direct URL.
+> 📦 Includes Flask, flask-cors, spaCy, python-docx, PyMuPDF, and en\_core\_web\_sm via direct URL.
 
 If needed, install spaCy model manually:
 
 ```bash
-python -m spacy download en_core_web_lg
+python -m spacy download en_core_web_sm
 ```
 
 ### 4. Frontend Setup
@@ -96,26 +96,6 @@ npm install
 npm run dev
 ```
 (The website must be opened on port 8080 and the website is ready to be used)
-
----
-
-
-## ⚙️ Configuration
-
-Create `.env` files for both frontend and backend as follows:
-
-### backend/.env
-
-```ini
-FLASK_ENV=development
-FLASK_SECRET_KEY=your_secret_key_here
-```
-
-### frontend/.env
-
-```ini
-VITE_API_URL=http://localhost:5000
-```
 
 ---
 
@@ -148,7 +128,7 @@ resume_ai/
 | Error                        | Solution                                                  |
 | ---------------------------- | --------------------------------------------------------- |
 | ModuleNotFoundError          | Reinstall requirements: `pip install -r requirements.txt` |
-| spaCy model missing          | Run: `python -m spacy download en_core_web_lg`            |
+| spaCy model missing          | Run: `python -m spacy download en_core_web_sm`            |
 | fitz (PyMuPDF) not found     | Run: `pip install PyMuPDF`                                |
 | docx not found               | Run: `pip install python-docx`                            |
 | Python not found             | Reinstall Python and ensure it's added to PATH            |

@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4 py-12 z-[-3]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-extrabold text-resume-primary dark:text-white mb-4">
+            <h1 className="text-4xl font-extrabold text-resume-primary dark:text-resume-secondary mb-4">
               <span className="inline">
               About{" "}
               <span className="inline"><GradientText

@@ -6,7 +6,6 @@ import ResumeResults from './ResumeResults';
 import { toast } from 'sonner';
 import { Button } from 'react-day-picker';
 import { AnalysisResult } from '@/types/analysis';
-import GradientText from "@/components/ui/GradientText";
 
 export default function ResumeAnalyzer() {
   const [file, setFile] = useState<File | null>(null);
@@ -35,14 +34,7 @@ export default function ResumeAnalyzer() {
   return (
     <div className="max-w-4xl mx-auto p-4 space-y-6">
       <h1 className="text-3xl font-bold text-center dark:text-white">
-        <GradientText
-          colors={["#9BBD67", "#26C168", "#92C8C0", "#4079ff", "#E3F1E8", "#515039", "#88FDE9", "#0B532F"]}
-          animationSpeed={7}
-          showBorder={false}
-          className="text-4xl font-semibold "
-        >
-          Resume Analyzer
-        </GradientText>
+        Resume Analyzer
       </h1>
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -54,7 +46,7 @@ export default function ResumeAnalyzer() {
         <div>
           <ResumeResults result={result} loading={loading} />
           {file && (
-            <Button
+            <Button 
               onClick={handleAnalyze}
               disabled={loading}
               className="w-full mt-4"

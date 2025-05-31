@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -10,8 +10,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-y: auto; 
-  overflow-x: hidden;
 }
 
 @layer base {
@@ -138,17 +136,6 @@ html, body {
   --resume-secondary: #1d4ed8;
   --resume-light: #f0f9ff;
 }
-.metaball-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1080px;
-  height: 200px;
-  z-index: 0;
-  background: url('/path-to-metaball-animation.svg') no-repeat center center;
-  background-size: cover;
-  pointer-events: none; /* ensures footer content remains clickable */
-}
 .footer-content {
   position: relative;
   z-index: 1;
@@ -173,7 +160,7 @@ html, body {
 }
 
 .shiny-text {
-  color: #ebebeba4; /* Adjust this color to change intensity/style */
+  color: #ffffffa4; /* Adjust this color to change intensity/style */
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0) 40%,
@@ -211,7 +198,8 @@ html, body {
   border-radius: 1.25rem;
   /* 20px */
   font-weight: 500;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  transition: box-shadow 0.5s ease-out;
   overflow: hidden;
   cursor: pointer;
 }
@@ -269,33 +257,7 @@ html, body {
   animation: gradient linear infinite;
   font-weight: 600;
 }
-.sqr {
-  float: left;
-  box-sizing: border-box;
-}
 
-.glass-container {
-  border-radius: 16px;
-  padding: 24px;
-  backdrop-filter: blur(13px);
-  -webkit-backdrop-filter: blur(13px);
-}
-
-@media (prefers-color-scheme: dark) {
-  .glass-container {
-  }
-}
-.threads-container {
-  top: 70%;
-  left: 40%;
-  transform: translate(-55%, -70%);
-  position: absolute;
-  width: 120%;
-  height: 80%;
-  pointer-events: none; /* Allow clicks through it */
-  overflow: hidden;
-  z-index: -1;
-}
 .particles-container {
   position: relative;
   width: 100%;

@@ -13,7 +13,7 @@ const Header = () => {
               colors={["#9BBD67", "#26C168", "#92C8C0", "#4079ff", "#E3F1E8", "#515039", "#88FDE9", "#0B532F"]}
               animationSpeed={10}
               showBorder={false}
-              className="text-2x1 font-semibold pb-2"
+              className="text-2x1"
             >
               ResumeAI
             </GradientText>
