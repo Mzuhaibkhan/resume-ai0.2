@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         {/* Footer */}
-        <footer className="w-full bg-[#f0f0f0] dark:bg-slate-900 py-6 px-4 mt-4" >
+        <footer className="w-full bg-[#f0f0f0] dark:bg-[#0d1526] py-6 px-4 mt-4" >
 
           <div className="max-w-7xl mx-auto flex justify-between items-start text-black dark:text-slate-400">
             {/* Left Profile */}
